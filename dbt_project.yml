@@ -1,7 +1,7 @@
 name: jaffle_shop_dbtvault
 profile: jaffle_shop
 version: '0.1.0'
-require-dbt-version: ['>=0.18.0', '<0.20.0']
+require-dbt-version: '>=0.0.1'
 config-version: 2
 
 analysis-paths:
@@ -23,6 +23,7 @@ clean-targets:
 
 vars:
   load_date: 'current_timestamp'
+  'dbt_date:time_zone': 'America/Los_Angeles'
 
 models:
   jaffle_shop_dbtvault:
@@ -43,4 +44,14 @@ models:
       sats:
         tags:
           - 'satellite'
+    dim:
+      tags:
+        - 'dim'
+      materialized: table
+    report:
+      tags:
+        - 'report'
+      materialized: table
 
+        
+          
