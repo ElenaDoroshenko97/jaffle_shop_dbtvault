@@ -23,7 +23,7 @@ clean-targets:
 
 vars:
   load_date: 'current_timestamp'
-  'dbt_date:time_zone': 'America/Los_Angeles'
+  given_dttm: '2022-01-29 00:00:00'
 
 models:
   jaffle_shop_dbtvault:
@@ -52,6 +52,5 @@ models:
       tags:
         - 'report'
       materialized: table
-
         
           
