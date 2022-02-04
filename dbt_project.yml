@@ -23,7 +23,7 @@ clean-targets:
 
 vars:
   load_date: 'current_timestamp'
-  given_dttm: '2022-01-29 00:00:00'
+  given_dttm: '2022-02-03 14:30:00'
 
 models:
   jaffle_shop_dbtvault:
